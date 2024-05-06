@@ -1,0 +1,10 @@
+{
+  "label": "custom-disk",
+  "tags": [ "terraform-examples"],
+  "region": "br-gru",
+  "type": "g6-standard-2",
+  "image": "linode/debian11",
+  "swapSize": 512,
+  "diskSize": 10000,
+  "defaultPassword": "<put-your-password-here>"
+}

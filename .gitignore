@@ -1,0 +1,5 @@
+/.idea/
+/custom-disk/iac/.credentials
+/custom-disk/iac/.terraform*
+/custom-disk/iac/settings.json
+/custom-disk/iac/terraform.tfstate*
