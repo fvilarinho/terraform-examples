@@ -3,3 +3,7 @@
 /custom-disk/iac/.terraform*
 /custom-disk/iac/settings.json
 /custom-disk/iac/terraform.tfstate*
+/rancher/iac/.credentials
+/rancher/iac/.terraform*
+/rancher/iac/settings.json
+/rancher/iac/terraform.tfstate*
