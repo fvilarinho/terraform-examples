@@ -7,3 +7,7 @@
 /rancher/iac/.terraform*
 /rancher/iac/settings.json
 /rancher/iac/terraform.tfstate*
+/vpc/iac/.credentials
+/vpc/iac/.terraform*
+/vpc/iac/settings.json
+/vpc/iac/terraform.tfstate*

@@ -1,0 +1,138 @@
+{
+  "region": "br-gru",
+  "vpcs": ["vpc-nonpci", "vpc-pci"],
+  "subnets": [
+    {
+      "id": "vpc-nonpci-dev",
+      "vpc": "vpc-nonpci",
+      "networkMask": "10.0.0.0/24"
+    },
+    {
+      "id": "vpc-nonpci-prod",
+      "vpc": "vpc-nonpci",
+      "networkMask": "10.2.0.0/24"
+    },
+    {
+      "id": "vpc-pci-dev",
+      "vpc": "vpc-pci",
+      "networkMask": "10.3.0.0/24"
+    },
+    {
+      "id": "vpc-pci-prod",
+      "vpc": "vpc-pci",
+      "networkMask": "10.5.0.0/24"
+    }
+  ],
+  "vms": [
+    {
+      "id": "vm1-nonpci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm2-nonpci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm1-nonpci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm2-nonpci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm1-pci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm2-pci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm1-pci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm2-pci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    }
+  ],
+  "gateways": [
+    {
+      "id": "gateway-nonpci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "gateway-nonpci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-nonpci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "gateway-pci-dev",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-dev",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "gateway-pci-prod",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "subnet": "vpc-pci-prod",
+      "defaultPassword": "<put-your-password-here>"
+    }
+  ]
+}
