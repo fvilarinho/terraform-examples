@@ -11,3 +11,7 @@
 /vpc/iac/.terraform*
 /vpc/iac/settings.json
 /vpc/iac/terraform.tfstate*
+/nodebalancer/iac/.credentials
+/nodebalancer/iac/.terraform*
+/nodebalancer/iac/settings.json
+/nodebalancer/iac/terraform.tfstate*

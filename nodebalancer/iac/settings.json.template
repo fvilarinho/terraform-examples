@@ -1,0 +1,43 @@
+{
+  "region": "br-gru",
+  "vms": [
+    {
+      "id": "vm1",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm2",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "defaultPassword": "<put-your-password-here>"
+    },
+    {
+      "id": "vm3",
+      "tags": [ "terraform-examples"],
+      "region": "br-gru",
+      "type": "g6-nanode-1",
+      "image": "linode/debian12",
+      "defaultPassword": "<put-your-password-here>"
+    }
+  ],
+  "nodeBalancer": {
+    "id": "nodebalancer-vms",
+    "connectionThrottle": 20,
+    "port": 22,
+    "healthCheck": {
+      "protocol": "tcp",
+      "check": "connection",
+      "port": 22,
+      "interval": 10,
+      "timeout": 3,
+      "attempts": 3
+    },
+    "tags": [ "terraform-examples"]
+  }
+}
